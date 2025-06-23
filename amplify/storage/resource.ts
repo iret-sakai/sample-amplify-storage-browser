@@ -28,9 +28,6 @@ export const secondaryStorage = defineStorage({
     'backup_admin/*': [
         allow.groups(['admin']).to(['read', 'write', 'delete']),
         allow.authenticated.to(['read'])
-    ],
-    'backup_private/{entity_id}/*': [
-        allow.entity('identity').to(['read', 'write', 'delete'])
     ]
    })
 });

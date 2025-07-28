@@ -13,7 +13,7 @@ Amplify.configure(config);
 // （動作確認用）組織IDとフォルダプレフィックスを定数として定義
 // 今回プレフィクスは組織IDごとに行うことを想定している
 const orgId = "org-555";  // ユーザーが所属している組織ID（クレデンシャル生成に渡す組織ID）
-const prefixFolder = "org-123";  // S3オブジェクトのプレフィックス
+const prefixFolder = "org-555";  // S3オブジェクトのプレフィックス
 
 //S3ロケーション情報
 async function getS3Locations() {
